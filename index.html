@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="left"><i class="fa-solid fa-caret-left"></i></button>
+            <div class="middle">
+                <button class="selected" value="inicio" data-content="Inicio">Inicio</button>
+                <button value="creditos">Creditos</button>
+                <button value="quests">Jogo</button>
+            </div>
+            <button id="right"><i class="fa-solid fa-caret-right"></i></button>
+        </div>
+        <div class="content">
+            <div class="inicio">
+                <h1>Jogo de<br>Perguntas e Respostas</h1>
+                <p>
+                    Esse é um jogo de perguntas e respostas de biologia, com o tema base sendo mamiferos.<br/>Fique a vontade para jogar e se divertir com o sitema de potuação com seus amigos e familiares.
+                </p>
+                <div class="pontuacoes">
+                    <p>Pontuações</p>
+                    <div id="pontuacoes">
+
+                    </div>
+                </div>
+            </div>
+            <div class="creditos">
+                <h1>Creditos</h1>
+                <div class="member">
+                    <p>1</p>
+                    <p>Danilo Alves Falcirolli</p>
+                    <p>3°D</p>
+                    <p>*</p>
+                </div>
+                <div class="member">
+                    <p>2</p>
+                    <p>Gabriel de Oliveira Bizotto</p>
+                    <p>3°D</p>
+                    <p>*</p>
+                </div>
+                <div class="member">
+                    <p>3</p>
+                    <p>Melchior Josué Gomes de Almeida</p>
+                    <p>3°D</p>
+                    <p>*</p>
+                </div>
+            </div>
+            <div class="quests">
+                <h1>Deseja iniciar no...</h1>
+                <div>
+                    <button onClick="window.location.href = './pagina_perguntas/index.html?id=1'">1</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f98c80cab1.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
