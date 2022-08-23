@@ -26,6 +26,15 @@ body{
     position: fixed;
 }
 
+@media (max-width: 900px) {
+    .container {
+        align-self: center;
+        width: 100%;
+        position: fixed;
+        justify-content: center;
+    }
+}
+
 .container > .header  {
     padding: 10px 0px;
     display:flex;
@@ -33,6 +42,14 @@ body{
     flex-direction: row;
     align-items: center;
     position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .container > .header  {
+        justify-content: space-evenly;
+    }   
 }
 
 .header::before{
@@ -124,18 +141,26 @@ body{
     }
 }
 
+.content{
+    overflow: auto;
+    height: 70vh
+}
+
 /* inicio */
 
 .inicio {
     flex-direction: column;
     display:flex;
     justify-content: space-around;
-    height: calc(100vh - 70px);
+    height: 85vh;
+    margin-top:20px;
 }
+
 .inicio h1, p{
     text-align: center;
-    width: 100%;
+    width: 100%;    
 }
+
 .inicio > h1{
     color: var(--lightred);
 }
@@ -154,10 +179,20 @@ body{
     align-self:center;
     display:flex;
     width: 80%;
-    min-height: 400px;
-    max-height: 500px;
+    height: 400px;
     overflow: auto;
     background-color: var(--lightaqua);
+}
+@media (max-width: 900px) {
+    .pontuacoes{
+        height: 200px !important;
+    }
+    .inicio {
+    justify-content: space-between ;
+    }
+    .inicio  h1 {
+        margin: 0px !important;
+    }
 }
 .inicio .pontuacoes::-webkit-scrollbar{
     display:flex;
@@ -248,7 +283,8 @@ body{
     text-align: center;
     display:none;
     justify-content: space-around;
-    height: calc(100vh - 70px);
+    height: 85vh;
+    margin-top:20px;
 }
 
 .creditos h1{
@@ -284,7 +320,8 @@ body{
     text-align: center;
     display:none;
     justify-content: space-around;
-    height: calc(100vh - 70px);
+    height: 85vh;
+    margin-top:20px;
 }
 
 .quests h1{
@@ -311,4 +348,12 @@ body{
 
 .quests div button:nth-child(2){
     margin-inline: 20px;
+}
+
+.btn_game:not(.btn_game:nth-child(1)){
+    margin-top: 10px;
+}
+
+.btn_game_container{
+
 }

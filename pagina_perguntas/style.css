@@ -21,6 +21,13 @@ body{
     position: relative;
 }
 
+@media (max-width: 900px){
+    body{
+        flex-wrap: wrap;
+        flex-direction: column !important;
+    }
+}
+
 .container1 {
     position: relative;
     height: 100vh;
@@ -29,6 +36,16 @@ body{
     flex-direction: column;
     align-items: center;
     width: 30vw;
+}
+
+@media (max-width: 900px){
+    .container1 {
+        width: 100%;
+    }
+    #pergunta{
+        width: 90%;
+        align-self:center;
+    }
 }
 
 button:not(#salvar) {
@@ -127,11 +144,13 @@ button:hover:not(#salvar) {
     color: var(--lightcolor);
     padding-left: 30px;
     margin-left:-20px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
     height: 40px;
     font-size:20px;
     text-align: left;
+
+    border-radius: 10px;
+    min-height: 40px;
+    height: auto;
 }
 
 .retangulo p{
@@ -165,6 +184,36 @@ button:hover:not(#salvar) {
 .container2>div{
     padding: auto;
     margin:auto;
+}
+
+@media (max-width:900px){
+    .container2{
+        width: 100%;
+        justify-content: center;
+    }
+    .container2>div{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .questcontainer{
+        width: 90%;
+    }
+
+    .retangulo{
+        width: 100%;
+        border-radius: 10px;
+        min-height: 40px;
+        height: auto;
+    }
+
+    .retangulo>p{
+        width: 100%;
+    }
+    .circle2{
+        align-self: center;
+        top: auto;
+    }
 }
 
 .model {

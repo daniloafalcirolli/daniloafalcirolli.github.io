@@ -7,6 +7,7 @@ if(localStorage.getItem("pontuacoes") == undefined){
 function init(){
     ler_pontuacoes();
     addEvents();
+    document.querySelector(".content").style.height = `${screen.availHeight}px`;
 }
 
 function addEvents() {
