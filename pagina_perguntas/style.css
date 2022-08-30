@@ -232,7 +232,13 @@ button:hover:not(#salvar) {
     width: 600px;
     height: 400px;
     display:flex;
-    border-radius: 10px;
+}
+
+@media(max-width:900px){
+    .modal{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .modal div {
@@ -244,6 +250,13 @@ button:hover:not(#salvar) {
     width: 100%;
     justify-content: space-around;
     align-items: center;
+}
+
+@media(max-width: 900px){
+    .modal div{
+        width: 80% !important;
+        height: 50% !important;
+    }
 }
 
 .modal div p {
